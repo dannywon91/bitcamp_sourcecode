@@ -1,0 +1,195 @@
+/* 기본설정 값 */
+        * {
+            margin:0;
+            padding:0;
+        }
+
+        body {
+            font-family:"맑은 고딕","돋움";
+            font-size:12px;
+            color:#444444;
+        }
+
+        #page_top{
+            margin: 0 auto;
+            width: 995px;
+        }
+
+        #page_aside{
+            width: 995px;
+            margin: 0 auto;
+        }
+
+        #page_section{
+            height: 800px;
+        }
+
+        #page_footer{
+            width: 100%;
+        }
+        #main_img{
+            width: 100%;
+        }
+
+        /* #wrap{
+            width: 995px;
+            margin: 0 auto;
+            border: solid 1px purple;
+        } */
+
+        ul {
+            list-style-type:none;
+        }
+            
+        .clear{
+            clear: both;
+        }
+        
+        .line{
+            border-bottom: solid 1px gray;
+        }
+
+
+        /* 기본설정 값 끝*/
+
+
+
+
+        /* 헤더스타일 시작*/
+
+        header{
+            height: 100px;
+            padding: 10px;
+            /* border: solid 1px purple; */
+        }
+
+        #header_logo{
+            padding: 5px;
+            float: left;
+            /* border: solid 1px purple; */
+            
+        }
+
+        #header_top_menu{
+            margin-right: 82px;
+            float: right;
+
+            /* border: solid 1px purple; */
+
+        }
+
+        #header_top_menu li{
+            font-size: 16px;
+            display: inline;
+        }
+
+        #nav_menu{
+            float: right;
+            width: 700px;
+            padding: 10px;
+            display: inline;
+            /* border: solid 1px purple; */
+        }
+
+        #nav_menu li{
+            
+            font-size: 18px;
+            font-weight: bold;
+
+            padding: 10px;
+            margin: 0 20px 0 20px;
+            display: inline;
+            /* border: solid 1px purple; */
+        }
+        
+        
+        /* 헤더스타일 끝 */
+
+        
+
+
+        
+
+
+        /* 사이드바 스타일 시작 */
+
+        aside{
+            float: left;
+            /* border: solid 1px purple; */
+        }
+
+
+        #side_menu{
+            border: solid 1px purple;
+        }
+
+        #사진이론{
+            color: #5df0c0;
+            padding: 7px;
+            width: 240px;
+            font-size: 24px;
+            background-color: #516e7f;
+        }
+
+        #side_menu li{
+            font-size: 18px;
+            margin: 20px;
+            /* border: solid 1px purple; */
+        }
+
+        /* 사이드바 스타일 끝 */
+
+        /* 색션 스타일 시작*/
+        section{
+            padding: 10px;
+            width: 753px;
+            float: left;
+            /* border: solid 1px purple; */
+            
+        }
+
+        #카메라동작원리{
+            font-size: 26px;
+            font-weight: bold;
+        }
+        #카메라동작원리_p{
+            font-size: 16px;
+        }
+
+        #section_img{
+            margin: 10px 0 10px 170px;
+        }
+
+        #그림1과정 li{
+            margin-left: 25px;
+
+            font-size: 14px;
+
+        }
+        /* 색션 스타일 끝*/
+
+        /* 푸터스타일 시작 */
+        footer{
+            background-color: #2C2A29;
+            /* border: solid 1px purple; */
+        }
+
+        #footer_logo{
+            margin: 50px;
+            /* border: solid 1px purple; */
+        }
+
+        #footer_img{
+            margin-left: 485px;
+            display: inline;
+        }
+        #footer_txt{
+            float: right;
+            margin: 50px 630px 50px 0;
+
+            color: white;
+            /* border: solid 1px purple; */
+
+        }
+
+        /* 푸터스타일 끝 */

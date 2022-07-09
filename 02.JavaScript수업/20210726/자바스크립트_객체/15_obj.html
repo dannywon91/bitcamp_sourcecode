@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="digClock"></div>
+
+
+        <script>
+            //이름있는 기본함수 선언(1급객체)
+            function digClock(){
+                var today = new Date(); //Date객체 생성
+                
+                var day = today.getMonth() + 1 + "월 " + today.getDate() + "일 ";
+
+                var time = today.getHours() + "시 " +
+                           today.getMinutes() + "분 " +
+                           today.getSeconds() + "초 ";
+
+                //DOM tree 조작
+                document.getElementById("digClock").innerHTML = day+time;
+
+                //syntax: setInterval(callback, ms)
+                //        지정된 시간만료 후 마다, 연속적으로 callback 수행
+                //
+                //function setInterval(handler: TimerHandler, timeout?: number, ...arguments: any[]): number
+                setInterval(digClock, 1000);
+            }
+
+            digclock();
+        </script>
+    </body>
+</html>

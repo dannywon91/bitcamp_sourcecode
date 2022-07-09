@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+
+            *{
+                color: blueviolet;
+            }
+              /* Tag/Type/Element selector*/
+            body{
+                font-family: '돋움';   
+            }
+            
+            h3{
+                font-family: '맑은고딕';
+                color: rgb(233, 80, 59);
+            }
+
+            p{
+                font-size: 14px;
+                line-height: 150%;
+            }
+
+            li{
+                list-style-type: symbols();        /*목록의 bullet 모양변경*/
+                font-size: 16px;
+            }
+
+            span{
+                font-weight: bold;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <h3>- 배낭여행이란?</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, voluptatum! Quaerat possimus in aliquam illo, cum cupiditate laboriosam non temporibus omnis explicabo ducimus aperiam nulla quasi distinctio. Quia, nihil iste.</p>
+
+        <!--  -->
+
+        <h3>- 배낭여행의 종류</h3>
+        <ul>
+            <li><span>여권 준비</span> : Lorem ipsum dolor sit amet </li>
+            <li><span>비행기 예약</span> : Lorem ipsum dolor sit amet</li>
+            <li><span>여행 스케줄</span> : Lorem ipsum dolor sit amet</li>
+            <li><span>짐싸기</span> : Lorem ipsum dolor sit amet</li>
+        </ul>
+
+        <h3>- 배낭여행 준비</h3>
+
+        <ul>
+            <li><span>여권 준비</span> : Lorem ipsum dolor sit amet</li>
+            <li><span>비행기 예약</span> : Lorem ipsum dolor sit amet</li>
+            <li><span>여행 스케줄</span> : Lorem ipsum dolor sit amet</li>
+            <li><span></span></li>
+        </ul>
+        <!-- h3+(ul>(li>span)*4) -->
+    </body>
+</html>

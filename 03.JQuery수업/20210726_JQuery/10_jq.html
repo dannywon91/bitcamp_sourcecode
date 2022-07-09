@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            .css_pic {
+                height: 430px;
+                
+                text-align: center;
+            }
+            
+            .css_pic img {
+                width: 250px;
+            }
+            
+            
+        </style>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js" referrerpolicy="no-referrer"></script>
+        
+        <script>
+            
+            //객체리터럴 방식으로 사용자정의 객체를 만드는 방법
+            var obj = {
+                field1: 10,               //number
+                field2: true,             //boolean
+                field3: "value",          //String
+                field4: [1,2,3,4],        //array
+                field5: {                 //user-defined obj  
+                    field_1: false
+                },
+
+                method1: function () {},  //function
+                method2: function () {}   //function
+                
+            };
+
+            $(function () {
+                console.clear();
+
+                //-------------------------------------------------//
+                // 단독이벤트 (onclick) 등록
+                $("button.b1").click(function () {
+
+                    // img 태그에 대해, 애니메이션 수행
+                    $("img").animate({          //객체 리터럴 방식으로 애니메이션 효과 지정
+                        width: '100px',         //애니메이션 대상 속성1
+                        opacity: .2             //애니메이션 대상 속성2
+                    },
+                    2000,                       //지속시간(ms)
+                    function () {
+                        console.log('- 첫번째 애니메이션 완료');
+
+                    }); // animate: 2000은 애니메이션 지속시간(duration time, ms)
+                }); //onclick for button.b1
+
+                $("button.b2").click(function () {
+                    
+                    $("img").animate({
+                        height: '250px'
+                    },
+                    1000,
+                    function(){
+                        console.log('- 두번째 애니메이션 완료');
+                    
+                    })
+                })
+
+
+                $("button.b3").click(function () {
+
+                    $("img").animate({
+                        width: '300px'
+                    },
+                    'fast',
+                    function () {
+                        console.log('- 세번째 애니메이션 완료');
+                    });
+                });
+            });
+        </script>
+
+
+    </head>
+    <body>
+        <div class="css_pic">
+            <p>버튼을 누르면 그림의 크기가 바뀝니다.</p>
+
+            <button class="b1">가로 100픽셀</button>
+            <button class="b2">가로 200픽셀</button>
+            <button class="b3">가로 300픽셀</button>
+            
+            <br>
+            <img name="pic1" src="https://picsum.photos/600/400" alt="">
+
+
+
+
+        </div>
+    </body>
+</html>

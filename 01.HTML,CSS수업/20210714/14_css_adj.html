@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        /* 인접형제 선택자(+) => 바로 아래 동생 태그를 선택 */
+        h1+h2+ul{
+            color: blue;    
+        }
+        
+        /* 인접형제 선택자(+) => 바로 아래 동생 태그를 선택 */
+        div+h3{
+            color: red;
+        }
+
+        /* 인접형제 선택자(+) => 바로 아래 동생 태그를 선택 */
+        h3+p{
+            background-color: yellow;
+            color: purple;
+        }
+
+        h3:empty{
+            height: 100px;
+            width: 100px;
+            background-color: springgreen;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>인접 형제 선택자1</h1>
+        
+        <h2>인접 형제 선택자2</h2>
+
+        <ul>목록
+            <li>주제1</li>
+            <li>주제2</li>
+        </ul>
+    </div>
+    <h3>Adjacent Selector1</h3>
+    
+    <p>인접 형제 선택자에 의한 스타일 적용</p>
+
+    <h3></h3>
+</body>
+</html>

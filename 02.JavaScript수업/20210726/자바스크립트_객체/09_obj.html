@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>[Car1]</p>
+    <p id="data10"></p>
+    <p id="data20"></p>
+    <p id="data30"></p>
+    
+    <p>[Car2]</p>
+    <p id="data11"></p>
+    <p id="data21"></p>
+    <p id="data31"></p>
+
+    <p>[Car3]</p>
+    <p id="data12"></p>
+    <p id="data22"></p>
+    <p id="data32"></p>
+
+
+
+
+    <script>
+        //원소가 객체인 배열 --> "객체배열"
+
+        var car=[
+            //객체 리터럴방식으로 객체를 선언
+            {name : 'Sonata', color:'blue', speed:100},
+            {name : 'Jeep', color:'red', speed:70},
+            {name : 'Passat', color:'white', speed:150}
+        ]; // 객체배열 생성
+
+        console.log('car :', car);
+
+        for(var i = 0; i < 3; i++){
+            // var cname = document.querySelector(selector);
+            // var cname = document.querySelectorAll(selector);
+
+            var cname=document.getElementById("data1"+i);
+            cname.textContent='자동차 이름 : ' + car[i].name;
+
+            var colname=document.getElementById("data2"+i);
+            cname.textContent='자동차 색상 : ' + car[i].color;
+
+            var cspeed=document.getElementById("data3"+i);
+            cspeed.textContent='자동차 속도 : ' + car[i].speed;
+        }//for
+    </script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+
+
+/* 기본설정 */
+body,input,textarea,select,button,table{font-family:'돋움',Dotum,'굴림',Gulim,AppleGothic,sans-serif; font-size:12px; color:#333;}
+body,div,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,p,form,fieldset,input,table,tr,th,td{margin:0;padding:0;}
+h1,h2,h3,h4,h5,h6{font-weight:normal;font-size:100%;}
+ul,ol{list-style:none;}
+fieldset,img{border:0; vertical-align:top;}
+address{font-style:normal;}
+p,li,dd{font-size:1em; line-height:1.5em; text-align:justify;}
+/* a-style */
+a{color:#333;text-decoration:none;}
+a:hover,a:active,a:focus{color:#333;text-decoration:none;}
+
+section{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* 기본설정 */
+
+/* Header */
+
+header{
+    height: 130px;
+    border: 1px dotted red;
+    background-image: url(/05.Project/img/header.jpg);
+}
+
+.header_in{
+    height: 130 px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.top_nav{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+
+.top_nav li{
+    display: inline-block;
+}
+
+.top_nav .text{
+    padding: 3px 5px;
+    
+    
+    display: inline-block;
+    color: white;
+    font-size: 13px;
+}
+
+
+.logo{
+    float: left;
+    margin-top: 50px;
+}
+
+
+/* .nav_menu{
+    float: left;
+    margin-left: 20px;
+} */
+
+
+.menu{
+    margin-left: 10px;
+    margin-top: 70px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    width: 160px;
+}
+
+.last{
+    display: inline-block;
+    font-size: 16px;
+    width: 100px;
+}
+
+.nav_menu li h3 a{
+    font-weight: bold;
+}
+
+
+
+/* Header */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main visual*/
+
+.visual{
+    height: 490px;
+    border: 1px dotted red;
+}
+
+
+
+
+
+/* Main visual*/
+
+
+
+
+/* Main quick*/
+.quick{
+    display: inline-flex;
+    height: 300px;
+    width: 1000px;
+    justify-content: space-around;
+    align-items: center;
+    
+    border: 1px dotted red;
+
+    background-color: rgb(72 174 240);
+}
+
+.quick div > a{ 
+    height: 160px;
+    width: 180px;
+    
+}
+
+.quick div > a > h2{
+    height: 160px;
+    width: 180px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+#quick1 > a > h2{
+    background-image: url(/05.Project/img/퀵메뉴1.png);
+    
+}
+#quick2 > a > h2{
+    background-image: url(/05.Project/img/퀵메뉴2.png);
+    
+}
+#quick3 > a > h2{
+    background-image: url(/05.Project/img/퀵메뉴3.png);
+    
+}
+#quick4 > a > h2{
+    background-image: url(/05.Project/img/퀵메뉴4.png);
+}
+#quick5 > a > h2{
+    background-image: url(/05.Project/img/퀵메뉴5.png);
+
+}
+
+
+/* Main quick*/
+
+
+
+
+/* Main notice*/
+
+.notice{
+    height: 400px;
+    border: 1px dotted red;
+}
+
+
+/* Main notice*/
+
+
+
+
+/* Main question*/
+
+.question{
+    height: 250px;
+    border: 1px dotted red;
+}
+
+
+
+/* Main question*/
+
+
+
+/* Main space*/
+
+.space{
+    height: 100px;
+    border: 1px dotted red;
+}
+
+
+/* Main space*/
+
+
+
+/* Main companies*/
+
+.companies{
+    height: 230px;
+    border: 1px dotted red;
+}
+
+
+/* Main companies*/
+
+
+/* Main */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+footer{
+    height: 230px;
+    border: 1px dotted red;
+}
+
+/* Footer */

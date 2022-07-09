@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+
+        *{
+            padding:0;
+            margin: 0;
+        }/*css reset*/
+
+        body{
+            margin: 10px;
+        }
+        
+        li{
+            list-style-type: none;
+        }
+
+        .image{
+            float: left;  /*이것이 핵심*/
+            margin: 5px;
+
+            border: solid 1px red;
+        }
+
+        #desc{
+            float: left;  /*이것이 핵심*/
+
+            width: 300px;
+            margin-left: 30px;
+            border: solid 1px red;
+        }
+        
+        #menu{
+            float: right;  /*이것이 핵심*/
+
+            border: solid 1px red;
+            font-weight: bold;
+        }
+
+        #menu li{
+            padding: 5px;
+            border-bottom: dashed 1px gray;
+        }
+
+        #h_menu li{
+            float: right;
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="image">
+        <img src="https://picsum.photos/150/200" alt="">
+    </div>
+
+    <div class="image">
+        <img src="https://picsum.photos/id/1025/150/200" alt="">
+    </div>
+
+    <div class="image">
+        <img src="https://picsum.photos/id/598/150/200" alt="">
+    </div>
+
+    <div class="image">
+    <img src="https://picsum.photos/id/318/150/200" alt="">    
+    </div>
+
+    <div class="image">
+        <img src="https://picsum.photos/id/684/150/200" alt="">
+    </div>
+    <div id="desc">
+        <h3>강아지풀</h3>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi doloribus autem minima tempore placeat debitis ipsa assumenda harum sequi deserunt tenetur, adipisci labore quibusdam, facere ratione unde facilis hic recusandae?</p>
+    </div>
+
+    <ul id="menu">
+        <li>강아지1</li>
+        <li>강아지2</li>
+        <li>강아지3</li>
+        <li>강아지4</li>
+    </ul>
+
+    <h3>가로메뉴</h3>
+    <ul id="h_menu">
+
+        <li class="menus">고양이1</li>
+        <li >|</li>
+        <li class="menus">고양이2</li>
+        <li >|</li>
+        <li class="menus">고양이3</li>
+        <li >|</li>
+        <li class="menus">고양이4</li>
+    </ul>
+
+    
+</body>
+</html>

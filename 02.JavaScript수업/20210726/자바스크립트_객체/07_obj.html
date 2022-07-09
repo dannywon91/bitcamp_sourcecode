@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>[Hong's Car]</p>
+
+    <p id="carname"></p>
+    <p id="carcolor"></p>
+    <p id="carspeed"></p>
+
+    <p>[Kim's Car]</p>
+
+    <p id="carname2"></p>
+    <p id="carcolor2"></p>
+    <p id="carspeed2"></p>
+
+    <script>
+        //사용자 정의 생성자 함수 선언
+        function Car(name, color, speed){
+            //함수내에서, this키워드를 사용하여 멤버(속성,메소드) 추가
+            this.name=name;
+            this.color=color;
+            this.speed=speed;
+
+            this.speedup=function(){
+                return this.speed+10;
+            };   //sppedup()
+
+            this.speeddown=function(){
+                return this.speed-10;
+            };   //speeddown
+
+        }//constructor
+
+
+        //----------------------------------------------//
+        // 사용자 정의 생성자 함수로 객체를 생성하고 사용하기
+        //----------------------------------------------//
+
+
+
+        var Hongcar=new Car('Sonata', 'blue', 100);
+        var Kimcar=new Car("Jeep", "black", 70);
+
+        console.log("1. Hongcar:", Hongcar);
+        console.log("2. Kimcar:", Kimcar);
+
+        //----------------------------------------------//
+        // DOM tree를 조작하자!!! by using document
+        //----------------------------------------------//
+
+
+        //(Method) ParentNode.querySelector<Element>(selectors: string): Element
+        // var cname = document.querySelector("carname");
+        var cname = document.getElementById("carname");
+        cname.textContent="자동차 이름 : " + Hongcar.name;
+
+        var colname = document.getElementById("carcolor");
+        colname.textContent="자동차 색상: " + Hongcar.color;
+
+        var cspeed = document.getElementById("carspeed");
+        cspeed.textContent="자동차 속도 : " + Hongcar.speed;
+
+
+        var colname = document.getElementById("carname2");
+        colname.textContent="자동차 이름 : " + Kimcar.name;
+
+        var colname = document.getElementById("carcolor2");
+        colname.textContent="자동차 색상: " + Kimcar.color;
+
+        //(Method) Document
+        var cspeed = document.getElementById("carspeed2");
+        cspeed.textContent="자동차 속도 : " + Kimcar.speed;
+        
+        
+    </script>
+    
+</body>
+</html>

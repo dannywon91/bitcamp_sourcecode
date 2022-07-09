@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            p{
+            /*태그선택자 or 타입선택자 or 요소선택자*/
+                font-size: 14px;
+                line-height: 180%;
+
+            }
+            
+            #제목{
+            /*Id선택자: #으로 시작 id 속성값은 현재 HTML문서에서 반드시 고유해야함*/
+            /*고유한 한개의 요소에 스타일 적용*/
+
+                color: red;
+                font-weight: bold;
+            }
+            #제목1{
+                color: chartreuse;
+                font-weight: bold;
+            }
+            
+            .blue{
+            /*클래스 선택자: 도트(.)로 시작*/
+                color: blue;
+            }
+            .abc{
+                color: coral;
+                font-weight: bold;
+                font-size: 25px;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <h3 id="제목">제목</h3>
+
+        <p><span id="제목1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span> Expedita vel esse dignissimos alias quaerat eius libero nam, saepe ipsam tempore dolores, veritatis fugit asperiores vero ex velit iure perspiciatis voluptas!</p>
+        
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="blue">Temporibus deserunt ullam, voluptate illum fuga eius quod cupiditate expedita harum aut dolorum</span>, <span class="abc">sed quibusdam</span> dicta eveniet sit quisquam! Nulla, magni id!</p>
+        
+    </body>
+</html>

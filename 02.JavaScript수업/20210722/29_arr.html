@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var city=['서울', '부산', '구포', '대구', '대전'];
+            var str2 = city.splice(2, 0, '오산');
+            
+            // // var str1 = city.splice(1,2);
+
+            // var str1 = city.splice(1);
+
+            // console.log("삭제데이터:", str1);
+            // console.log("남은 배열:", city);
+
+
+            //--------------------------------------------//
+
+
+            // (method) Array<string>.splice(start: number, deleteCount: number, ...items: string[]): string[] (+1 overload)
+
+            console.log("삭제데이터:", str2);
+            console.log("남은 배열:", city);
+
+
+            //--------------------------------------------//
+
+
+
+            // var str3 = city.splice(2, Number.MAX_VALUE);
+
+            // console.log("삭제데이터:", str3);
+            // console.log("남은 배열:", city);
+
+
+        </script>
+    </body>
+</html>

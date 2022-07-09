@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script>
+            //method) Document.createElement<"img">(
+            //   tagName: "img", options?: ElementCreationOptions): HTMLImageElement
+            function add(){
+                var img=document.createElement('img');
+    
+                //HTMLElement.setAttribute(속성명, 속성값)
+                img.setAttribute('src', "https://picsum.photos/id/684/600/400");
+                img.setAttribute('width', 100);
+                img.setAttribute('height', 122);
+    
+                document.body.appendChild(img);
+
+            }
+            
+        </script>
+        
+    </head>
+    <body>
+        <a href="#" onclick="javascript:add();">[이미지 추가]</a>
+        <p></p>
+    </body>
+    
+</html>

@@ -1,0 +1,31 @@
+
+
+
+GET http://DESKTOP-0AVCHNC:8090/sample/getText HTTP/1.1
+
+GET http://DESKTOP-0AVCHNC:8090/sample/getSample HTTP/1.1
+
+
+GET http://DESKTOP-0AVCHNC:8090/sample/getSampleByJSON HTTP/1.1
+
+GET http://DESKTOP-0AVCHNC:8090/sample/getSampleByXML HTTP/1.1
+
+GET http://DESKTOP-0AVCHNC:8090/sample/getSampleList HTTP/1.1
+
+GET http://DESKTOP-0AVCHNC:8090/sample/getSampleMap HTTP/1.1
+
+GET http://DESKTOP-0AVCHNC:8090/sample/getBoardList HTTP/1.1
+
+GET http://DESKTOP-0AVCHNC:8090/sample2/check
+?height=100&weight=100 HTTP/1.1
+
+GET http://DESKTOP-0AVCHNC:8090/sample2/check
+?height=40&weight=100 HTTP/1.1
+ 
+POST http://DESKTOP-0AVCHNC:8090/sample3/ticket HTTP/1.1
+Content-Type: application/json;charset=UTF-8
+
+{"tno":1000, "owner":"trinity","grade":"A"}
+
+
+GET http://DESKTOP-0AVCHNC:8090/sample4/product/book/777 HTTP/1.1

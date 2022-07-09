@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var accArr = {'f0':100, 'f1':200, 'f2':300};
+        console.log('accArr:', accArr);
+
+        //1st. method - indexing을 통해, 특정원소의 값 추출
+        accArr['f3'] = 400;
+
+        //2nd. method - 토트연산자(객체멤버 참조연산자)를 이용한
+        //              특정 원소의 값 추출
+        accArr.f4 = 500;
+
+        //1st. method - indexing을 통해, 특정원소의 값 추출(사용)
+        console.log(accArr['f2']);
+        console.log(accArr['f3']);
+        console.log(accArr['f4']);
+
+
+        //2nd. method - 토트연산자(객체멤버 참조연산자)를 이용한
+        //              특정 원소의 값 추출(사용)
+
+        console.log(accArr.f0);         // 'f0'키 데이터 조회
+        console.log(accArr.f1);         // 'f1'키 데이터 조회
+
+        
+    </script>
+    
+
+</body>
+</html>

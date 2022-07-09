@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js" referrerpolicy="no-referrer"></script>
+
+        <script>
+            var n = 0;
+
+            //문서준비 이벤트 핸들러
+            //--1. 
+            //--2.
+            //--3.
+            // 즉, 위의 3개의 코드는 모두 같은 jquery의 시작점을 의미
+            $(document).ready(function () {
+                $("div.container").mouseenter(function () {
+                    console.log("1. ...");
+
+                    //.text() == .textContent 속성조작
+                    //.html() == .innerHTML 속성조작
+                    $("p:first").text("마우스포인트 들어옴");
+                    $("p:last").text("총 횟수: " + (++n));
+                });//mouseenter
+
+                $("div.container").mouseleave(function () {
+                    console.log("2. ...");
+
+                    //.text() == .textContent 속성조작
+                    //.html() == .innerHTML 속성조작
+                    $("p:first").text("마우스포인트 나감");
+                });//mouseenter
+                
+                $("div.container").click(function () {
+                    
+                })
+            }); //ready
+
+        </script>
+
+        <style>
+            div.container{
+                width: 200px;
+                height: 100px;
+                border: 3px solid purple;
+
+                text-align: center;
+                background-color: yellow;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="container">
+
+            <p>마우스 이벤트 알아보기</p>
+            <p>0</p>
+        </div>
+    </body>
+</html>

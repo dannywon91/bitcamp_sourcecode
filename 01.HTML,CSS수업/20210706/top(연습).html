@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aasdasd</title>
+    <style>
+
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    li{
+        list-style-type: none;
+
+    }
+
+    #head{
+        background-color: #f6f5ef;
+    }
+
+    #logo{
+        float: left;
+        
+        margin: 20px 0 10px 20px;
+        border: solid 1px red;
+    }
+
+    #top{
+        float: right;
+
+        margin: 30px 20px 0 0;
+        border: solid 1px red;
+    }
+
+    #menu{
+        clear: both;  /*이 예제의 핵심: 이전의 float 효과를 제거 */
+
+        height: 40px;
+        background-color: #443e58;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    #menu li{
+        display: inline;
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="head">
+        <div id="logo">
+            <img src="https://picsum.photos/263/41" alt="">
+        </div>
+        
+        <div id="top">
+            로그인 | 회원가입 | 공지사항
+        </div>
+    </div>
+
+    <ul id="menu">
+        <li class="item">HTML</li>
+        <li>|</li>
+        <li class="item">CSS</li>
+        <li>|</li>
+        <li class="item">Javascript</li>
+        <li>|</li>
+        <li class="item">PyThon</li>
+        <li>|</li>
+        <li class="item">PHP</li>
+        <li>|</li>
+        <li class="item">Java</li>
+    </ul>
+
+</body>
+</html>

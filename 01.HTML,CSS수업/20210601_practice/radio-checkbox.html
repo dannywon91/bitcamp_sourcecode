@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>radio-checkbox</title>
+    </head>
+
+    <body>
+        <form action="http://localhost:8888" method="POST">
+            1. 정보공개 : 
+                <input type="radio" name="access"> 공개
+                <input type="radio" name="access" checked> 비공개
+            <hr>   <!--수평선을 그려주는 태그-->
+
+            2. 취&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;미 :
+                <input type="checkbox" name="hobby"> 탁구
+                <input type="checkbox" name="hobby" > 배드민턴
+                <input type="checkbox" name="hobby" checked> 음악감상
+                <input type="checkbox" name="hobby" checked> 악기연주
+                
+            <p></p>
+
+            <input type="submit" value="전송">
+            <input type="reset" value="초기화">
+        </form>    
+    </body>
+</html>

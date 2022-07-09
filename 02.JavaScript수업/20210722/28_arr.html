@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var arr=['서울','부산','구포','대구','인천','대전','세종'];
+
+
+            //slice(startindex, denindex): half-open(endindex exclusive)
+            //syntax: Array<string>.slice(start?: number, end?: number): string[]
+            var str1 = arr.slice(0, 4);
+            var str2 = arr.slice(2, -1);
+            var str3 = arr.slice(-4, -2);
+            
+            
+            console.log("부분 배열1: " , str1)
+            console.log("부분 배열2: " , str2)
+            console.log("부분 배열3: " , str3)
+            
+            console.log("original:", arr)
+            
+            console.log(arr.slice());    //인덱스를 지정해주지 않으면(생략하면) 처음부터 끝까지
+            
+
+        </script>
+    </body>
+</html>

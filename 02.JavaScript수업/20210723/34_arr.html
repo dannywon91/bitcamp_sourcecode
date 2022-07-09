@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var arr = [1,2,3,4,5,6,7,8,9,10];
+
+            function task(item) {
+                console.log('>>> task( ${item} ) invoked');
+
+                return "" + item;
+            }//mapArr()
+
+
+            //map : 자료구조에 있는 각 데이터를 다른 형태로 바꿔주는 작업
+            
+
+            var mapArr = arr.map(task);
+
+            console.log("원래배열 : ", arr);
+            console.log("map 메소드 적용 배열 : ", mapArr);
+
+        </script>
+    </body>
+</html>

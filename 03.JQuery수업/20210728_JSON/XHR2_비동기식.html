@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XHR2</title>
+
+
+    <script>
+        window.onload = function () {
+            //XHR 을 이용한 비동기식 요청처리
+
+            //---------------------------------------------------//
+            // 1. var XMLHttpRequest: new () => XMLHttpRequest 객체생성
+            //---------------------------------------------------//
+            var xhr = new XMLHttpRequest();
+
+
+
+            //---------------------------------------------------//
+            // 2. (property) XMLHttpRequest.onreadystatechange:
+            //               (this:XMLHttpRequest, ev: Event) => any
+            //---------------------------------------------------//
+            
+            xhr.onreadystatechange = function () {
+                console.log('onreadystatechange:', xhr.readyState);
+
+                if(xhr.readyState == 4) {  //응답완료상태에서
+
+                    if(xhr.status == 200) { //HTTP status code ( 즉, 200, 정상처리된 응답일때만 DOM tree조작을 하겠다는 의미)
+                        document.body.innerHTML = xhr.responseText;
+                        
+
+                        //JSON.parse: JSON -> JS Object로 변환
+                        var arr = JSON.parse(xhr.responseText);
+                        console.log(arr);
+                        
+                        if(arr.length > 0) {
+                            var person = arr[0];
+
+                            console.group('PERSON');
+                            console.log('1. id:', person.id);
+                            console.log('2. first_name:', person.first_name);
+                            console.log('3. last_name:', person.last_name);
+                            console.log('4. email:', person.email);
+                            console.log('5. gender:', person.gender);
+                            console.log('6. ip_address:', person.ip_address);
+                            console.groupEnd();
+                        }//if(array.length)
+
+                    }//if
+
+                }//if
+            }; //onreadystatechange
+
+            //---------------------------------------------------//
+            // 3. (method) XMLHttpRequest.open(
+            //       method: string, url: string, async: boolean,
+            //       username?: string
+            //    ): void
+            //---------------------------------------------------//
+
+
+            //동기식, GET방식, 요청을 보내는 URL주소 지정
+            xhr.open('GET', 'doc/persons.json', true);
+
+            //동기식, GET방식, 요청을 보내는 URL주소에 쿼리스트링 붙여서 요청
+            // xhr.open('GET', 'http://localhost:8080/doc/persons.json?name=Yoseph&age=23', false)
+
+
+            // 동기식, POST방식, 요청을 보내는 URL주소 지정
+            // xhr.open('POST', 'http://localhost:8080/doc/persons.json', false)
+            
+            
+            
+            
+
+            //4.
+            xhr.send();
+
+
+
+
+        }; //onload
+        
+    </script>
+    
+</head>
+<body>
+    
+</body>
+</html>

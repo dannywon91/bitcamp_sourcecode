@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            //1. 새로운 이미지 태그 생성
+            var img=document.createElement('img');
+
+            //2. 이미지태그에 src/width/height 속성 생성 및 속성값 설정
+            img.src = 'http://place-hold.it/200x200';
+            img.width=100;
+            img.height=122;
+
+            //3. body태그에 이미지 태그를 자식으로 추구
+            document.body.appendChild(img);
+        }//add()
+    </script>
+</head>
+<body>
+    <a href="#" onclick="javascript:add()">[이미지 추가]</a>
+    <p></p>
+</body>
+</html>

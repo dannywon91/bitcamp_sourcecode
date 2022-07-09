@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js" referrerpolicy="no-referrer"></script>
+
+            <script>
+                $(function () {
+                    console.log("Jquery started.");
+
+                    $("#hide").click(function () {
+                        $("p").hide();
+
+                    }); //click
+
+                    $("#show").click(function () {
+                        $("p").show();
+                        
+                    });//click
+                });
+
+
+
+            </script>
+
+    </head>
+    <body>
+        <p>메세지: 제이쿼리를 공부합니다.</p>
+
+        <button id="hide">메세지 삭제</button>
+        <button id="show">메세지 출력</button>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            div{
+                font-size: 32px;
+                color: white;
+                border: 3px inset red;
+            }
+
+            #box1{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+
+                width: 100px;
+                height: 100px;
+
+                background: blue;
+                
+                z-index: 3;
+            }
+            
+            #box2{
+                position: absolute;
+                top: 20px;
+                left: 20px;
+
+                width: 100px;
+                height: 100px;
+
+                background: rgb(96, 96, 201);
+                
+                z-index: 2;
+            }
+
+            #box3{
+                position: absolute;
+                top: 40px;
+                left: 40px;
+
+                width: 100px;
+                height: 100px;
+
+                background: skyblue;
+                
+                z-index: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box1">box #1</div>
+        <div id="box2">box #2</div>
+        <div id="box3">box #3</div>
+    </body>
+</html>

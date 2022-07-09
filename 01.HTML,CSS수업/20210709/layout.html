@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .clear{
+            clear:both;
+            /*양쪽으로 내려오는 float효과를 모두 해제*/
+        }
+
+        header{
+            width: 995px;
+            height: 100px;
+
+            margin-top: 10px;
+            border: solid 1px purple;
+        }
+
+        nav{
+            width: 995px;
+            height: 70px;
+
+            margin-top: 10px;
+            border: solid 1px purple;
+        }
+
+        section{
+            width: 674px;
+            height: 240px;
+
+            float: left;
+            margin-top: 10px;
+            border: solid 1px purple;
+        }
+
+        aside{
+            width: 290px;
+            height: 240px;
+
+            float: left;
+
+            margin-top: 10px;
+            margin-left: 29px;
+            border: solid 1px purple;
+        }
+
+        footer{
+            width: 995px;
+            height: 130px;
+
+            margin-top: 10px;
+            border: solid 1px purple;
+        }
+
+        div#wrap{
+            width: 1000px;
+
+            /* 이 div 박스를 뷰포트의 중앙에 배치 */
+            margin: 0 auto;
+            border: solid 1px purple;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            상단 헤더
+        </header>
+        
+        <nav>
+            내비게이션 메뉴
+        </nav>
+
+        <section>
+            메인 콘텐츠
+        </section>
+
+        <aside>
+            사이드바
+        </aside>
+
+        <div class="clear"></div>
+
+        <footer>
+            하단 푸터
+        </footer>
+        
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            body{
+                font-size: 12pt; 
+                font-weight: bold;
+            }
+
+            .sp1{
+                position: static;
+
+                /* 적용되지 않음 */
+                /* static 에서는 top/left/right/bottom 속성이 적용되지 않음 */
+                /* 즉, 위치를 조절 할 수 없음. */
+                top: 100px; /* 사용 불가 */
+
+                background-color: cyan;
+                width: 400px;
+                height: 50px;
+            }
+            .sp2{
+                position: static;
+
+                /* 적용되지 않음 */
+                /* static 에서는 top/left/right/bottom 속성이 적용되지 않음 */
+                /* 즉, 위치를 조절 할 수 없음. */
+                left: 30px; /* 사용 불가 */
+
+                background-color: orange;
+                width: 400px;
+                height: 50px;
+            }
+
+            /* inline 요소는, width/height 속성을 적용해도 효과가 없음. */
+            /* 즉, 자신이 가지고 있는 컨텐츠 영역만큼만 공간을 차지하기 때문에. */
+            
+            /* 하지만, Blcok요소와 inline-block 요소는 자신의 박스모델의 
+            width/height 속성으로 너비와 크기를 조절할 수 있음 */
+        </style>
+    </head>
+    
+    <body>
+        <h1>positioning style1</h1>
+        <p class="sp1">정적위치설정적용1</p>
+        <div class="sp2">정적위치설정적용2</div>
+        <p class="sp3">기본위치 설정</p>
+    </body>
+</html>

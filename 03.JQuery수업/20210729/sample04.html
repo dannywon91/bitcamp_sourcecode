@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js" referrerpolicy="no-referrer"></script>
+
+        <script>
+            $(function () {
+                console.clear();
+                console.log("jq started");
+                
+
+                // ES6+ let 변수를 정의하는 키워드
+                //    blcok변수: 변수가 정의된 block{}안에서만 유효범위를 갖는 변수
+                let jqXHR = $.ajax({
+                    //비동기 요청을 위한 기본 설정항목
+                    async: true,
+                    cache:false,
+                    timeout: 500,
+                    crossDomain: true,
+
+                    //실제 우리가 원하는 자원을 비동기로 요청하는 설정
+                    data: "name=Yoseph&age=23",
+                    contentType: "application/x-www-form-urlencoded",
+
+                    type: "get",
+                    url: "doc/persons.xml",
+                    dataType: "xml",
+
+
+                    //로컬 이벤트 핸들러 등록
+                    beforeSend: function (jqXHR, setting) {
+                        console.log("\t+ beforeSend invoked.");
+                    },
+
+                    
+                    success: function (data, textStatus, jqXHR) {
+                        console.log("\t+ success invoked.");
+
+                        let persons = $(data).find('person');
+
+                        //002. 수신된 xml 문서에 <person> 태그가 1개 이상 있다면...
+                        if(persons.length > 0){    //배열의 크기조사
+
+                            //--3. <table> 태그 생성(아직 DOMtree에는 붙이지 않았음)
+                            let table = $('<table border = "1"/>');
+                            //--4. $.each(): 배열 순회 메소드
+                            $.each(persons, function (index, person) {
+
+                                //--5. <tr> 태그 생성(역시 아직 DOMtree에 붙이지 않았음)
+                                let tr = $('<tr/>');
+
+                                //--6. XML문서의 각 <person> 태그의 자식태그를 찾아서,
+                                // 그 값을 얻어다가 let변수에저장
+                                let id = $(person).find('id').text();
+                                let first_name = $(person).find('first_name').text();
+                                let last_name = $(person).find('last_name').text();
+                                let email = $(person).find('email').text();
+                                let gender = $(person).find('gender').text();
+                                let ip_address = $(person).find('ip_address').text();
+
+                                //--7. 각 <person> 태그를 순회할 때마다, <td> 태그들을 생성하고,
+                                // 이 태그의 값(컨텐츠)으로 XML의 데이터를 설정
+
+                                $('<td/>').text(id).appendTo(tr);
+                                $('<td/>').text(first_name).appendTo(tr);
+                                $('<td/>').text(last_name).appendTo(tr);
+                                $('<td/>').text(email).appendTo(tr);
+                                $('<td/>').text(gender).appendTo(tr);
+                                $('<td/>').text(ip_address).appendTo(tr);
+
+                                //--8. <table>태그의 자식태그로, <tr>태그를 추가
+
+                                table.append(tr);
+                            }); //$.each
+
+                            $('#wrapper').append(table);
+                        }// if
+                    } // success
+                });//$.ajax
+            })//jq
+        </script>
+    </head>
+    <body>
+        <div id="wrapper"></div>
+    </body>
+</html>

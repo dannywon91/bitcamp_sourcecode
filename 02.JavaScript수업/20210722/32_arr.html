@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var arr = ['서울', '부산', '청주', '대구'];
+
+            //배열의 각 원소를 순회할때마다, 해야될 일을 함수로 만들어 떤진다
+            // function task(item, index) {
+            //     console.log(`task(${item}, ${index}) invoked.`);
+            // }// printArr
+
+            //ES6+ : Arrow function (자바언어에서는 람다식이라고 부름)
+
+            var task = (item, index) => 
+                console.log(`task(${item}, ${index}) invoked.`);
+            // printArr
+
+
+
+            arr.forEach(task);
+
+        </script>
+
+        <script>
+            function add() {
+                var header = document.createElement('h3');
+                var textNode = document.createTextNode('내이름은 홍길동 입니다.');
+                header.appendChild(textNode);
+                document.body.appendChild(header);
+            };
+            
+        </script>
+        <a href="#" onclick="add()">당신의 이름은?</a>
+    </body>
+</html>

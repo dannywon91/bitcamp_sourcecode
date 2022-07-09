@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 첫번째 등장하는 태그가 h4라면 선택한다(hr태그가 아닌 태그도 순서를 계산한다) */
+        /* 1. 첫번째 h4 태그 선택 : 적용안됨 -> 첫번째 태그가 p태그라서 */
+        h4:first-child{
+            color: blue;
+            font-size: 20px;
+        }
+
+        h4:nth-of-type(1){
+            font-size: 20px;
+            color: blue;
+        }
+
+        /* 2. 마지막 h4 태그 선택 : 적용안됨 -> 라이브서버에서 자동으로 넣어주는 태그가 마지막에 추가되어있어서 */
+        h4:last-child{
+            font-size: 20px;
+            color: red;
+        }
+        /* 3. 홀수번째(2n+1)로 나오는 h4 태그 선택 */
+        h4:nth-child(2n+1){
+            background-color: green;
+        }
+
+        h4:nth-last-of-type(2n){
+            background-color: yellow;
+        }
+        
+        /* h4:nth-last-child(2n){
+            background-color: yellow;
+        } */
+    </style>
+</head>
+<body>
+    <p>Hello</p>
+
+    <h4>웹 프로그래밍</h4>
+    <h4>웹 프로그래밍</h4>
+    <h4>웹 프로그래밍</h4>
+    <h4>웹 프로그래밍</h4>
+    <h4>웹 프로그래밍</h4>
+    <h4>웹 프로그래밍</h4>
+    <h4>웹 프로그래밍</h4>
+    <h4>웹 프로그래밍</h4>
+    <h4>웹 프로그래밍</h4>
+    <h4>웹 프로그래밍</h4>
+    <h4>웹 프로그래밍</h4>
+</body>
+</html>

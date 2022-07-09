@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <p id="carname"></p>
+        <p id="carcolor"></p>
+        <p id="carspeed"></p>
+    </body>
+
+    <script>
+        var car={
+            "name": "Sonata",
+            "speed": 50,
+            "color": "white",
+
+            start:function(){
+                return this.speed+10;
+            }
+        };
+
+        car.model = "Hyundai";    //객체의 맴버 추가
+
+        console.log("-typeof car: " + typeof car);     //object
+
+        console.log("- getElementById:" + document.getElementById("carname"));
+        
+        //위에 선언된 세개의 p태그(=문서객체)의 컨텐츠를 조작한다.
+        var cname = document.getElementById("carname");
+        cname.textContent=car.name;
+
+        var colname=document.getElementById("carcolor");
+        colname.textContent=car.color;
+
+        var cspeed=document.getElementById("carspeed");
+        cspeed.textContent=car.start();
+
+    </script>
+</html>

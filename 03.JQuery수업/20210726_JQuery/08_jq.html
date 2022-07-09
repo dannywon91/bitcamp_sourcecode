@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js" referrerpolicy="no-referrer"></script>
+
+        <script>
+            $(function () {
+                //단독 이벤트 등록방식: 하나의 이벤트 핸들러만 등록
+                $("button").click(function () {
+                    console.log(">>> onclick event triggerd.");
+
+                    $("h1, h2, p, div").toggleClass("red"); /***/
+
+                }); //onclick for button
+            })
+        </script>
+        <style>
+
+            .red{
+                color: red;
+                border: 5px solid blue;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>CSS</h1>
+        <h2>HTML</h2>
+        <p>자바스크립스</p>
+        <div>제이쿼리</div>
+        <button>CSS toggle</button>
+    </body>
+</html>

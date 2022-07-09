@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>루바토 기타</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        
+        body{
+            width: 1010px;
+        }
+
+        header{
+            height: 70px;
+            /* background-color: yellow; */
+        }
+
+        main{
+            height: 900px;
+            /* background-color: blue; */
+        }
+
+        #main_dis{
+            margin-left: 160px;
+            width: 850px;
+            height: 900px;
+            /* background-color: darkmagenta; */
+        }
+
+        #main_top{
+            height: 300px;
+            /* background-color: darkturquoise; */
+        }
+
+        #main_mid{
+            height: 300px;
+            /* background-color: gray */
+        }
+
+        #main_bottom{
+            height: 300px;
+            /* background-color: hotpink; */
+        }
+
+        
+
+        footer{
+        
+            height: 140px;
+            /* background-color: brown; */
+        }
+
+        #footter_space{
+            float: left;
+            height: 140px;
+            width: 200px;
+            /* background-color: seashell; */
+        }
+
+        #footer_logo{
+            float: left;
+            margin-left: 10px;
+            height: 140px;
+            width: 200px;
+            /* background-color: seashell; */
+        }
+
+        #footer_txt{
+            float: left;
+            margin-left: 10px;
+            height: 140px;
+            width: 400px;
+            /* background-color: seashell; */
+        }
+
+        #footer_minilogo{
+            float: left;
+            margin: 10px 0 0 10px;
+            height: 50px;
+            width: 170px;
+            /* background-color: seashell; */
+        }
+
+        #logo{
+            float: left;
+
+            height: 70px;
+            width: 160px;
+            /* background-color: chartreuse; */
+            margin-right: 0;
+        }
+
+        /* #top{
+            margin-left: 180px;
+            
+            height: 70px;
+            width: 830px;
+            
+            background-color: darkgray;
+
+            border: solid 2px;  
+        } */
+        
+        #nav{
+            float: left;
+            height: 900px;
+            width: 180px;
+            /* background-color: darkorange; */
+        }
+
+        #nav_login{
+            float: left;
+            
+            height: 90px;
+            /* background-color: cadetblue; */
+
+        }
+
+        #nav_login_idpass{
+            float: left;
+            margin: 5px 1px 1px 3px;
+            height: 15px;
+            width: 100px;
+
+            /* background-color: white; */
+        }
+        
+        #login li{
+            display: inline;
+
+        }
+
+        
+
+        #mid_left{
+            float: left;
+            width: 450px;
+            height: 300px;
+            /* background-color: lavender; */
+        }
+
+        #mid_right{
+            margin-left: 450px;
+            width: 400px;
+            height: 300px;
+            /* background-color: green; */
+        }
+
+        #mid_left_top{
+            height: 150px;
+            /* background-color: black; */
+        }
+
+        #mid_left_bottom{
+            height: 150px;
+            /* background-color:gray; */
+        }
+
+        #main_bottom_left{
+            float: left;
+            margin-left: 50px;
+            width: 220px;
+            height: 300px;
+
+            /* background-color: salmon; */
+        }
+
+        #main_bottom_center{
+            float: left;
+            margin-left: 50px;
+            width: 220px;
+            height: 300px;
+
+            /* background-color: salmon; */
+        }
+
+        #main_bottom_right{
+            float: left;
+            margin-left: 50px;
+            width: 220px;
+            height: 300px;
+
+            /* background-color: salmon; */
+        }
+        
+        #main_menu{
+            margin: 35px 0 0 30px;
+
+            background-repeat: no-repeat;
+            font-size: 26px;
+            font-weight: bold;
+            background-image: url(../HTML5/publishing/img/RUBATOimg/main_menu_bg.png);
+        }
+
+        #main_menu li{
+            display: inline;
+        }
+
+        #top_menu li{
+            margin-top: 3px;
+            margin-right: 50px;
+            float: right;
+            display: inline;
+        }
+
+        #button_login{
+            
+            float: right;
+            margin-right: 10px;
+        }
+
+        #li{
+            list-style-type: none;
+        }
+
+        #member_login{
+            display: block;
+        }
+
+        #bangmyung{
+            width: 180px;
+
+            height: 100px;
+            margin-top: 100px;
+            /* background-color: white; */
+            border-bottom: dotted 1px black;
+        }
+
+        #bangmyung_img{
+            
+            border-bottom: dotted 1px black;
+        }
+        
+        .latests{
+            margin-top: 90px;
+        }
+
+        #latest1{
+            margin-top: 20px;
+        }
+
+        #latest3{
+            margin-left: 10px;
+        }
+
+        #book_pen{
+            margin-bottom: 70px;
+        }
+
+        #bach{
+            margin: 50px 50px;
+        }
+
+        #more{
+            
+            margin-left: 345px
+        }
+
+        #mid_left_top_more{
+            float: right;
+            margin-top: 130px;
+        }
+
+        .img1{
+            margin: 75px 15px;
+        }
+
+        #footer_txt{
+            list-style-type: none;
+        }
+
+        #main_img{
+            margin: 10px 30px 0 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="page">
+        <header>
+            
+
+            <article id="top">
+                <ul id="top_menu">
+                    <li>NOTICE</li>
+                    <li>JOIN |</li>
+                    <li>LOGIN |</li>
+                    <li>HOME |</li>
+    
+                </ul>
+
+                <ul id="main_menu">
+                    <li>자유게시판 |</li>
+                    <li>기타 연주 |</li>
+                    <li>공동 구매 |</li>
+                    <li>연주회 안내 |</li>
+                    <li>회원 게시판 |</li>
+                </ul>
+            </article>
+
+        </header>
+
+        <main>
+            <div id="nav">
+                <article id="logo">
+                    <img src="../HTML5/publishing/img/RUBATOimg/logo.png">
+                    
+                </article>
+                <article id="nav_login">
+                    <img id="member_login" src="../HTML5/publishing/img/RUBATOimg/ttl_login.png">
+                    <img id="button_login" src="../HTML5/publishing/img/RUBATOimg/btn_login.gif">
+                    <article id="nav_login_idpass"></article>
+                    <article id="nav_login_idpass"></article>
+                    
+                    <img src="../HTML5/publishing/img/RUBATOimg/btn_join.gif">
+                    <img src="../HTML5/publishing/img/RUBATOimg/btn_search.gif">
+
+                    
+                    
+                </article>
+
+                <article id="bangmyung">
+                    <img id="bangmyung_img" src="../HTML5/publishing/img/RUBATOimg/ttl_memo.gif">
+
+                    <ul>
+                        <li>안녕하세요.</li>
+                        <li>안녕하세요.</li>
+                        <li>안녕하세요.</li>
+                        <li>안녕하세요.</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div id="main_dis">
+                <article id="main_top">
+                    <img id="main_img" src="../HTML5/publishing/img/RUBATOimg/main_img.png">
+                    <img id="latest1" src="../HTML5/publishing/img/RUBATOimg/latest1.gif">
+                    <img id="more" src="../HTML5/publishing/img/RUBATOimg/more.gif">
+                    <img id="latest3" src="../HTML5/publishing/img/RUBATOimg/latest3.gif">
+                </article>
+
+                <article id="main_mid">
+                    <article id="mid_left">
+                        <article id="mid_left_top">
+                            <img id="mid_left_top_more" src="../HTML5/publishing/img/RUBATOimg/more.gif">
+                            <img id="book_pen" src="../HTML5/publishing/img/RUBATOimg/book_pen.gif" >
+                            <img class="latests" src="../HTML5/publishing/img/RUBATOimg/latest2.gif">
+
+                            <ul>
+                                <!-- <li>루바토1</li>
+                                <li>루바토2</li>
+                                <li>루바토3</li>
+                                <li>루바토4</li> -->
+                            </ul>
+                        </article>
+                        <article id="mid_left_bottom">
+                            <img id="mid_left_top_more" src="../HTML5/publishing/img/RUBATOimg/more.gif">
+                            <img id="book_pen" src="../HTML5/publishing/img/RUBATOimg/book_pen.gif" >
+                            <img class="latests" src="../HTML5/publishing/img/RUBATOimg/latest4.gif">
+                        </article>
+                    </article>
+                    <article id="mid_right">
+                        <img id="bach" src="..//HTML5/publishing/img/RUBATOimg/bach.jpg" >
+                    </article>
+                </article>
+
+                <article id="main_bottom">
+                    <article id="main_bottom_left">
+                        <img class="img1" src="../HTML5/publishing/img/RUBATOimg/img1.jpg">
+                    </article>
+                    <article id="main_bottom_center">
+                        <img class="img1" src="../HTML5/publishing/img/RUBATOimg/img1.jpg">
+                    </article>
+                    <article id="main_bottom_right">
+                        <img class="img1" src="../HTML5/publishing/img/RUBATOimg/img1.jpg">
+                    </article>
+                </article>
+
+            </div>
+           
+        </main>
+
+        <footer>
+            <div id="footer_main">
+                <article id="footter_space"></article>
+                <article id="footer_logo">
+                    <img src="../HTML5/publishing/img/RUBATOimg/logo_footer.gif" alt="">
+                </article>
+                <article id="footer_txt">
+                    <ul id="footer_txt">
+                        <li>서울시 강남구 삼성동 1234 우: 1234-567</li>
+                        <li>tel:031-123-4567 email:email@domain.com</li>
+                        <li>COPYRIGHT (C) 루바토 ALL RIGHT RESERVED</li>
+                    </ul>
+                </article>
+                <article id="footer_minilogo">
+                    <img src="../HTML5/publishing/img/RUBATOimg/facebook.gif">
+                    <img src="../HTML5/publishing/img/RUBATOimg/twitter.gif">
+                    <img src="../HTML5/publishing/img/RUBATOimg/blog.gif">
+                </article>
+
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

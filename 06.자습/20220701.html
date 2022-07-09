@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js" referrerpolicy="no-referrer"></script>
+
+        <script>
+            $(document).ready(function(){
+                $("#firstBtn").click(function(){
+                    $("h1").css("color", "black");
+                    $(".lis").css("color", "black")
+                    $("body").css("background-color", "white");
+                    
+                });// firstBtn.click
+
+                $("#secondBtn").click(function(){
+                    $("h1").css("color", "white");
+                    $(".lis").css("color", "white")
+                    $("body").css("background-color", "black");
+                    
+
+                    $("h1")
+                }); // secondBtn.click
+
+            }); // ready
+
+        </script>
+        <style>
+            
+            #firstBtn{
+                width: 100px;
+                height: 30px;
+
+                background-color: yellow;
+            }
+
+            #secondBtn{
+                width: 100px;
+                height: 30px;
+                
+                color: white;
+                background-color: black;
+
+                border-color: red;
+            }
+
+            .lis{
+                font-size: 15px;
+                font-weight: bold;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <button id="firstBtn">DAY</button>
+        <button id="secondBtn">NIGHT</button>
+
+        <h1>JavaScript</h1>
+        
+
+        <h1>내가 읽은 책들</h1>
+        <ol>
+            <li class="lis">부자아빠 가난한 아빠</li>
+            <li class="lis">세이노의 가르침</li>
+        </ol>
+
+    </body>
+</html>

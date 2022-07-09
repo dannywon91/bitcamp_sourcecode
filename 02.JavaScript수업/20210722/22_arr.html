@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var arrdata = []; //비어있는 배열 생성 by 배열 리터럴 방식으로...
+
+
+            //새로운 원소를 배열에 삽입하는 함수
+            function insertArr(){
+                var i = 0;  //지역 변수
+                for(i=0; i<=99; i++) {
+
+                    arrdata[i] = i+1;              //1~100 데이터
+
+                    console.log(arrdata[i] + " "); //데이터 출력
+                }//for
+            }//insertArr
+
+            function delArr(){
+                var i;  //지역변수: 카운터 변수
+
+                for(i=0; i<arrdata.length; i++) {
+                    if(i%2==0){             //
+                        arrdata[i] = 0;     //0으로 초기화
+                    }//if
+                    continue;
+                }//for
+                selectArr();    //다른함수 호출
+            }//delArr
+
+            function selectArr(){
+                var i;
+                for(i = 0; i <arrdata.length; i++){
+                    console.log(arrdata[i]);    //데이터조회
+                }//classical for
+
+                console.log("<p>홀수 번째 데이터 초기화 완료!");
+
+            }//selectArr
+
+            insertArr();//배열 데이터 생성 호출
+        </script>
+        <p></p>
+
+        <!-- onclick: global event attribute -->
+        <!-- 1.button tag: event source(target) -->
+        <!-- 2. onclick: event type -->
+        <!-- 3. onclick에 지정한 JS함수가 바로 event handler(listener) -->
+        <button 
+            type="button"
+            onclick="javascript:delArr()">배열의 홀수 번째 데이터 초기화</button>
+        
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [];
+
+        for(var i=0; i<10; ++i){
+            arr[i] = 
+                [
+                    String(i + "-" + 0),         //문자열 객체 생성자 함수
+                    String(i + "-" + 1),         //문자열 객체 생성자 함수
+                    String(i + "-" + 2)         //문자열 객체 생성자 함수
+                ];
+
+        }//for
+
+        function printData() {
+            for(var x = 0; x < arr.length; x++){
+
+                for(var y = 0; y < arr[x].length; y++){
+                    console.log(arr[x][y] + " ");
+
+                }//inner for
+
+            }//for
+            
+        }//printData()
+    </script>
+
+    <button type="button" onclick="javascript:printData();">전체 배열 데이터 보기</button>
+</body>
+</html>

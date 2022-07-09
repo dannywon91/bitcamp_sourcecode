@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>iframe 공간 분할 예제</h3>
+    <div style="background-color: hotpink;">
+        <span>
+            <a href="../20210601_practice/abc.html" target="if_a">인사말</a> |
+        </span>
+        <span>
+            <a href="../20210601_practice/main.html" target="if_a">강좌소개</a> |
+        </span>
+        <span>
+            <a href="../20210601_practice/sample4.html" target="if_a">저자소개</a> |
+        </span>
+        <span>
+            <a href="http://www.w3c.com" target="if_b">저자 홈페이지</a>  
+        </span>
+    </div>
+    
+    <p></p>
+
+    <iframe src="basic.html" width="400" height="200" name="if_a" frameborder="1"></iframe>
+    <iframe src="basic.html" width="400" height="200" name="if_b" scrolling="no"></iframe>
+
+    <div style="background-color: indigo">한빛 아카데미(주)</div>
+</body>
+</html>

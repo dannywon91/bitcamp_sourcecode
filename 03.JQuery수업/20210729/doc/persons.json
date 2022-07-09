@@ -1,0 +1,82 @@
+[
+	{
+		"id": 1,
+		"first_name": "Wynn",
+		"last_name": "Gelderd",
+		"email": "wgelderd0@creativecommons.org",
+		"gender": "Male",
+		"ip_address": "124.244.181.228"
+	},
+	{
+		"id": 2,
+		"first_name": "Norry",
+		"last_name": "Stribling",
+		"email": "nstribling1@geocities.jp",
+		"gender": "Bigender",
+		"ip_address": "218.195.6.219"
+	},
+	{
+		"id": 3,
+		"first_name": "Warden",
+		"last_name": "Hepher",
+		"email": "whepher2@narod.ru",
+		"gender": "Agender",
+		"ip_address": "220.133.204.190"
+	},
+	{
+		"id": 4,
+		"first_name": "Lory",
+		"last_name": "Benko",
+		"email": "lbenko3@umich.edu",
+		"gender": "Bigender",
+		"ip_address": "232.193.241.191"
+	},
+	{
+		"id": 5,
+		"first_name": "Savina",
+		"last_name": "Borg-Bartolo",
+		"email": "sborgbartolo4@t.co",
+		"gender": "Agender",
+		"ip_address": "51.54.186.35"
+	},
+	{
+		"id": 6,
+		"first_name": "Aloysia",
+		"last_name": "Bush",
+		"email": "abush5@sphinn.com",
+		"gender": "Non-binary",
+		"ip_address": "24.52.176.164"
+	},
+	{
+		"id": 7,
+		"first_name": "Willy",
+		"last_name": "Eakins",
+		"email": "weakins6@wix.com",
+		"gender": "Genderfluid",
+		"ip_address": "139.13.77.80"
+	},
+	{
+		"id": 8,
+		"first_name": "Falito",
+		"last_name": "Broadey",
+		"email": "fbroadey7@vk.com",
+		"gender": "Female",
+		"ip_address": "198.225.159.3"
+	},
+	{
+		"id": 9,
+		"first_name": "Winfield",
+		"last_name": "Handscombe",
+		"email": "whandscombe8@mac.com",
+		"gender": "Agender",
+		"ip_address": "85.234.148.103"
+	},
+	{
+		"id": 10,
+		"first_name": "Wylie",
+		"last_name": "Martina",
+		"email": "wmartina9@bizjournals.com",
+		"gender": "Bigender",
+		"ip_address": "57.138.145.167"
+	}
+]

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js" referrerpolicy="no-referrer"></script>
+
+        <script>
+            $(function () {
+                console.clear();
+                console.log('jq started.');
+                
+                $('form').submit(function (e) {
+                    
+                    console.log('- submit event handler invoked.');
+                    
+                    // --1. form의 모든 전송파라미터들 --> query String 형태로 변환
+                    // name, age    -> name=Yoseph&age=23
+                    var qs = $(this).serialize();
+                    console.log('\t1. serialize', qs);
+
+                    
+                    
+                    //--2. form의 모든 전송파라미터들 --> JS 객체배열 형태로 변환
+                    //     name, age    --> [{name: 'Yoseph'}, {age: 23}]
+                    var arr = $(this).serializeArray();
+                    console.log("\t2. serializeArray:", arr);
+
+
+                    //--3. JS객체 --> QueryString 변환
+                    // 객체리터럴 방식으로, 사용자 정의 객체 생성
+                    var obj = {
+                        name: "Yoseph",
+                        age: 43
+                    };
+                    //위 객체리터럴로 정의된 속성을 QueryString으로 변환해줌
+                    console.log("\t3. param:", $.param(obj));
+
+                    
+                    //-----------------------------------------------------//
+                    //--4. JSON.stringify(obj): Object -> JSON문자열로 변환
+                    //-----------------------------------------------------//
+                    var json = JSON.stringify(obj);
+                    console.log('\t4. JSON.stringify:', json);
+                    
+                    
+                    
+                    
+                    //-----------------------------------------------------//
+                    //--5. JSON.parse(json): JSON문자열 --> Object로 변환
+                    //-----------------------------------------------------//
+                    
+                    obj = JSON.parse(json);
+                    console.log("\t5. JSON.parse:", obj)
+
+
+
+                    //-----------------------------------------------------//
+                    //--6.이벤트를 무력화 시키는 방법2가지
+                    //-----------------------------------------------------//
+                    // e.preventDefault();
+                    // return false;
+
+
+                }); // submit
+
+            }); // jq
+            
+
+        </script>
+    </head>
+    <body>
+        <form action="">    <!-- action속성이 비어있으면 현재 이 양식이 들어있는 자기자신이 받는다 -->
+            1. name: <input type="text" name="name"> <br>
+            2. age: <input type="number" name="age">
+
+            <p></p>
+
+            <input type="submit">
+        </form>
+    </body>
+</html>

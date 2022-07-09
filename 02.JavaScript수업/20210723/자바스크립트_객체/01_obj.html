@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="var1"></p>
+    <p id="var2"></p>
+    <p id="var3"></p>
+
+    <script>
+        //객체 리터럴 선언을 통한, 새로운 객체의 생성
+        //*** 사용자 정의 객체 ***
+
+        var car = {
+            name: 'Sonata',
+            speed: 100,
+            color: 'white',
+
+            //run method
+            run: function () {
+                console.log("자 !!!!!!!!!!! 달리자!!!!!!!!!!!!!!!!")
+            }//run()
+        };
+
+        console.log("- car:", car);
+        console.log("\t+ name:", car.name);      //2nd. method
+        console.log("\t+ speed:", car['speed']);    //1st. method
+        console.log("\t+ color:", car.color);
+
+        car.run();  //메소드 호출
+        car["run"]; //OK
+    </script>
+</body>
+</html>

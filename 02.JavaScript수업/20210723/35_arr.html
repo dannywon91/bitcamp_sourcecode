@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [21, 42, 33, 14, 25, 12, 37, 28, 16, 11];
+
+        function task(item) {
+            console.log(">>>task(" + item + "invoked.");
+
+            return item >= 18;
+        }//task()
+
+        var filteredArr = arr.filter( (item) =>  item >= 18);
+
+        console.log("필터 전 배열: ", arr);
+        console.log("필터 후 배열: ", filteredArr);
+    </script>
+</body>
+</html>
